@@ -32,10 +32,15 @@ update = function(dt) {
 render = function() {
     ctx.drawImage(Resources.get('images/enemy-bug.png'), this.x, this.y);
 };
-
+/*
+    ================================================
+                 Write Code Below Begin
+    ================================================                 
+*/
 // Now write your own player class
 // This class requires a render() and
 // a handleInput() method.
+//'images/char-boy.png' this is the asset for the player
 var Player = function(x, y, speed) {
     
 
@@ -49,6 +54,12 @@ renderPlayer = function() {
     
 
 };
+
+/*
+    ================================================
+                 Write Code Below Above
+    ================================================                 
+*/
 
 handleInput = function(keyPress) {
     if (keyPress == 'left') {
@@ -97,7 +108,7 @@ var checkCollision = function(anEnemy) {
     if (player.y + 63 <= 0) {        
         player.x = 202.5;
         player.y = 383;
-        alert('you made it!');
+        alert('You made it!');
         level +=1;
         addEnemies(level);
 
@@ -120,11 +131,22 @@ var checkCollision = function(anEnemy) {
         player.x = 2.5;
     }
 };
+/*
+    ================================================
+                 Write Code Below
+    ================================================                 
+*/
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
 
+
+/*
+    ================================================
+                 Write Code Below Above
+    ================================================                 
+*/
 var addEnemies = function(numEnemies) {
     // remove all previous enemies on canvas
     allEnemies.length = 0;
