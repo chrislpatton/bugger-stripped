@@ -8,9 +8,7 @@ var Enemy = function(x, y, speed) {
     enemyObj.speed = speed;
     enemyObj.update = update;
     enemyObj.render = render;
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
-    //enemyObj.sprite = 'images/enemy-bug.png';
+
     return enemyObj;
 };
 
